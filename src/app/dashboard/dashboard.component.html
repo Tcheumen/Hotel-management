@@ -1,0 +1,19 @@
+<div>
+  <h1>Liste des Chambres</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom de la Chambre</th>
+        <th>Type de Chambre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let room of rooms">
+        <td>{{ room.id }}</td>
+        <td>{{ room.name }}</td>
+        <td>{{ room.type }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
